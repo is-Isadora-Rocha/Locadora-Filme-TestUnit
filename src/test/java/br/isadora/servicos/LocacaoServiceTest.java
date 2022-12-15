@@ -1,7 +1,14 @@
+/**
+ * Nomeando o packageTest com o mesmo nome
+ * do package princial, o Java interliga
+ * como se fosse um único package, atribuindo
+ * métodos Public e Protected.
+ * **/
+package br.isadora.servicos;
+
 import br.isadora.entidades.Filme;
 import br.isadora.entidades.Locacao;
 import br.isadora.entidades.Usuario;
-import br.isadora.servicos.LocacaoService;
 import br.isadora.utils.DataUtils;
 import org.junit.Assert;
 import org.junit.Test;

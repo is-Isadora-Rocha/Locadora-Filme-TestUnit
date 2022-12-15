@@ -4,6 +4,7 @@ import br.isadora.entidades.Filme;
 import br.isadora.entidades.Locacao;
 import br.isadora.entidades.Usuario;
 
+import java.lang.invoke.StringConcatFactory;
 import java.util.Date;
 
 import static br.isadora.utils.DataUtils.adicionarDias;

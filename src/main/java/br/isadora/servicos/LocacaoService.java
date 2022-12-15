@@ -3,15 +3,12 @@ package br.isadora.servicos;
 import br.isadora.entidades.Filme;
 import br.isadora.entidades.Locacao;
 import br.isadora.entidades.Usuario;
-import com.sun.source.tree.AssertTree;
-import org.junit.Assert;
-import org.junit.Test;
 
 import java.util.Date;
 
 import static br.isadora.utils.DataUtils.adicionarDias;
 
-public class LocacaoService {
+public class LocacaoService{
     public Locacao alugarFilme(Usuario usuario, Filme filme){
         Locacao locacao = new Locacao();
         locacao.setFilme(filme);
@@ -28,17 +25,5 @@ public class LocacaoService {
         //TODO adicionar método para salvar
 
         return locacao;
-    }
-    @Test
-    public void teste() {
-        //cenario
-        LocacaoService service =  new LocacaoService();
-        Usuario usuario = new Usuario("Usuário 1");
-        Filme filme = new Filme("Filme 1", 1, 5.0);
-
-        //acao
-        service.alugarFilme(usuario, filme);
-
-        //verificacao
     }
 }
